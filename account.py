@@ -4,6 +4,7 @@ class Account:
         self.__account_balance = 0
 
     def deposit(self, amount):
+        amount = float(amount)
         if amount <= 0:
             return False
         else:
@@ -11,6 +12,7 @@ class Account:
             return True
 
     def withdraw(self, amount):
+        amount = float(amount)
         if amount <= 0:
             return False
         elif amount > self.__account_balance:
