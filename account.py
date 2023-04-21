@@ -10,7 +10,7 @@ class Account:
         self.__account_name = name
         self.__account_balance = 0
 
-    def deposit(self, amount: float) -> None:
+    def deposit(self, amount: float) -> bool:
         """
         This increments the account balance by the amount.
         :param amount: The amount deposited to the account.
@@ -23,7 +23,7 @@ class Account:
             self.__account_balance += amount
             return True
 
-    def withdraw(self, amount: float) -> None:
+    def withdraw(self, amount: float) -> bool:
         """
         This decrements the account balance by the amount.
         :param amount: The amount withdrawn from the account.
